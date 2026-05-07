@@ -1,8 +1,8 @@
 # Auto Build [Apex](https://github.com/NVIDIA/apex) [![Build](https://github.com/AlongWY/apex_wheels/actions/workflows/build.yml/badge.svg)](https://github.com/AlongWY/apex_wheels/actions/workflows/build.yml)
 
-自动构建 [Apex](https://github.com/NVIDIA/apex) 的不同版本
+Auto compile diff versions [Apex](https://github.com/NVIDIA/apex)
 
-## 编译选项
+## args
 + --build-option=--cpp_ext 
 + --build-option=--cuda_ext 
 + --build-option=--permutation_search 
@@ -27,7 +27,4 @@
 + --build-option=--distributed_adam 
 + --build-option=--distributed_lamb
 
-# 类似项目
-+ [Apex Wheels](https://github.com/AlongWY/apex_wheels)
-+ [Deepspeed Wheels](https://github.com/AlongWY/deepspeed_wheels)
-+ [TransfomrtEngine Wheels](https://github.com/AlongWY/TransformerEngine_wheels)
+# How to trigger

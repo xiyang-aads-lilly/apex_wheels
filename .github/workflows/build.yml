@@ -97,8 +97,8 @@ jobs:
             }}\"/g" /project/setup.py && sed -i -E
             's/check_cuda_torch_binary_vs_bare_metal\(CUDA_HOME\)/pass/g'
             /project/setup.py && python -m pip install -U pip setuptools wheel
-            packaging auditwheel-symbols ninja cmake numpy && python -m pip
-            install --no-cache-dir torch==${{ matrix.torch-version }}
+            packaging auditwheel-symbols ninja cmake numpy pybind11 && python -m
+            pip install --no-cache-dir torch==${{ matrix.torch-version }}
             --index-url https://download.pytorch.org/whl/cu${{
             matrix.cibw-build-torch-cuda-version }}
 
